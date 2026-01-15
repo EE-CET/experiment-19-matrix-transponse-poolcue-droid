@@ -24,10 +24,13 @@ public class MatrixTranspose {
             }
         }
 
-        // Print transposed matrix
+        // Print without trailing spaces
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
-                System.out.print(mat[i][j] + " ");
+                System.out.print(mat[i][j]);
+                if (j < N - 1) {
+                    System.out.print(" ");
+                }
             }
             System.out.println();
         }
